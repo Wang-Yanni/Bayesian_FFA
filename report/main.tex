@@ -1,0 +1,93 @@
+\documentclass[12pt, twocolumn]{article}
+\setlength{\parindent}{0pt}
+\usepackage[a4paper, top=1.5cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
+\raggedbottom
+\usepackage{amsmath,amssymb,dsfont}
+\usepackage{graphicx} 
+\usepackage{float}
+\usepackage{bbold}
+\usepackage{array}
+\usepackage{hyperref}                  
+\usepackage{enumitem} 
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{mathptmx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lipsum} 
+\usepackage{caption}
+\usepackage{booktabs} 
+\usepackage{threeparttable}
+\usepackage{afterpage}
+\usepackage{natbib}
+\usepackage{stfloats}
+\usepackage[section]{placeins}
+\usepackage{balance}
+\usepackage{stfloats}
+\brokenpenalty=0 % Allow breaks in the current column
+
+\clubpenalty=0      % Allow breaking after the first line of a paragraph
+\widowpenalty=0     % Allow breaking before the last line of a paragraph
+\displaywidowpenalty=0
+
+% Customizing figure and table spacing
+\setlength{\floatsep}{5pt}      % Space between floats
+\setlength{\textfloatsep}{5pt}  % Space between float and text
+\setlength{\intextsep}{5pt}     % Space between in-text float and text
+\setlength{\abovecaptionskip}{0pt} % Space above captions
+\setlength{\belowcaptionskip}{0pt} % Space below captions
+
+% Customizing section, subsection, and paragraph spacing
+\titleformat{\section}[block]{\large\bfseries}{\thesection.}{1em}{}
+\titlespacing*{\section}{0pt}{10pt}{5pt} % {left}{before}{after}
+\titleformat{\subsection}[block]{\normalsize\bfseries}{\thesubsection.}{1em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt}
+
+% Customizing paragraph spacing
+\titleformat{\paragraph}[runin]{\normalsize\bfseries}{\theparagraph.}{1em}{}
+\titlespacing*{\paragraph}{0pt}{6pt}{3pt} % {left}{before}{after}
+\setlength{\parskip}{0pt}  % No extra spacing between paragraphs
+
+% Redefining \normalsize to make sure it's in effect
+\renewcommand{\normalsize}{\fontsize{10}{12}\selectfont} 
+\normalsize
+
+\captionsetup{font={normalsize, bf, rm}}
+
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[L]{\textit{ISYE6420: Bayesian Data Analysis Project}}
+    \fancyfoot[C]{\textit{}}
+    \fancyfoot[R]{\thepage}
+    \renewcommand{\footrulewidth}{0.001cm}
+    \renewcommand{\headrulewidth}{0pt}
+}
+\pagestyle{plain} 
+
+\title{\textbf{Bayesian Analysis in Flood Frequency Hydrology: \\ Verification with RMC-BestFit}}
+\author{\textbf{Yanni Wang}}
+\date{} 
+
+\begin{document}
+\maketitle
+\pagestyle{fancy}
+
+
+\input{00_Abstract}
+
+\input{01_Introduction}
+
+\input{02_Data}
+
+\input{03_Methodology} 
+
+\input{04_Results_Discussion} 
+
+\input{05_Conclusion} 
+
+\bibliographystyle{plain}
+\bibliography{_Reference}
+\newpage
+\input{06_Appendix}
+
+\end{document}
