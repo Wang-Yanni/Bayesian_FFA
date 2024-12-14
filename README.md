@@ -23,23 +23,21 @@ This repository contains the source code, data, analysis, and documentation for 
 
 ### Overview
 
-Flood Frequency Analysis (FFA) is essential for hydrological studies, providing critical insights for infrastructure design, risk management, and water resource planning. This project leverages a Bayesian framework to address key limitations of traditional methods by:
-- Incorporating uncertainties and prior knowledge for more comprehensive analysis.
-- Modeling temporal variations in flood parameters using non-stationary approaches.
-- Delivering probabilistic estimates to guide decision-making under uncertain conditions.
+This study investigates the application of Bayesian analysis in flood frequency hydrology, employing an adaptive Differential Evolution Markov Chain with Snooker Updater (DE-MCzS) algorithm for parameter estimation. The results were verified against BestFit, a state-of-the-art hydrological software developed by the U.S. Army Corps of Engineers Risk Management Center (USACE-RMC). Its latest release (version 2.0) in October 2024, introduces the non-stationary feature that enables hydrologists to model temporal changes in flood frequency parameters.
 
 ### Highlights
 
 1. **Bayesian Framework**:
    - Adopts the **Log-Pearson Type III (LP3)** distribution to model annual flood peaks, capturing the skewed nature of hydrological data.
    - Utilizes the **Differential Evolution Markov Chain with Snooker Updater (DE-MCzS)** algorithm for efficient posterior sampling, enabling robust exploration of parameter spaces.
+   - Incorporates temporal changes in parameters in **non-stationary** flood flood frequency analysis.
 
 2. **Case Study 1: Harricana River, Canada**:
    - Evaluates the Bayesian framework against the classical Maximum Likelihood Estimation (MLE) method in a stationary flood frequency context.
    - Validates Bayesian outputs, including posterior modes and predictive distributions, against results from **BestFit**.
 
 3. **Case Study 2: O.C. Fisher Dam, USA**:
-   - Extends the analysis to non-stationary models, exploring temporal trends in flood parameters using linear and exponential approaches.
+   - Extends the analysis to **non-stationary** models, exploring temporal trends in flood parameters using linear and exponential approaches.
    - Examines how time index selection impacts flood frequency curves, providing insights into climate-driven variability.
 
 
